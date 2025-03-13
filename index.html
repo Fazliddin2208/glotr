@@ -34,16 +34,16 @@
     <!-- tab -->
     <ul class="nav nav-underline my-tabs">
       <li class="nav-item">
-        <a href="#description" class="nav-link active" >Описание</a>
+        <a href="#description" class="nav-link active">Описание</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#characteristics" >Характеристика</a>
+        <a class="nav-link" href="#characteristics">Характеристика</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#seller" >Продавец</a>
+        <a class="nav-link" href="#seller">Продавец</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#reviews" >Отзывы</a>
+        <a class="nav-link" href="#reviews">Отзывы</a>
       </li>
     </ul>
 
@@ -119,14 +119,137 @@
       <button class="show show-descr">Показать все <i class="fa-solid fa-angle-down"></i></button>
     </div>
 
+    <!-- characteristics -->
+    <div id="characteristics" class="characteristics">
+      <h4 class="title">Характеристики</h4>
+
+      <ul class="characteristics__list">
+        <li>
+          <span>Код товара</span>
+          <span>MGN93RU/A</span>
+        </li>
+        <li>
+          <span>Производитель</span>
+          <span>Apple</span>
+        </li>
+        <li>
+          <span>Разрешение экрана </span>
+          <span>2560x1600</span>
+        </li>
+        <li>
+          <span>Количество ядер процессора</span>
+          <span>8</span>
+        </li>
+        <li>
+          <span>Оптический привод</span>
+          <span>Отсутствует</span>
+        </li>
+        <li>
+          <span>Код товара</span>
+          <span>MGN93RU/A </span>
+        </li>
+        <li>
+          <span>Оптический привод</span>
+          <span>Отсутствует</span>
+        </li>
+      </ul>
+
+      <button class="show show-charac" style="margin-left: 16px">
+        Показать все <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </div>
+
+    <div class="payment">
+      <h4 class="title">Способы оплаты</h4>
+
+      <ul class="payment__list">
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+        <li>- Наличными</li>
+      </ul>
+
+      <button class="show show-payment">Показать все <i class="fa-solid fa-angle-down"></i></button>
+    </div>
+
+    <div class="delivery">
+      <h4 class="title">Способы доставки</h4>
+
+      <ul class="delivery__list">
+        <li>- Доставка куръером</li>
+        <li>- Доставка почтой</li>
+        <li>- Доставка почтой</li>
+        <li>- Доставка почтой</li>
+        <li>- Доставка почтой</li>
+        <li>- Доставка куръером</li>
+        <li>- Доставка куръером</li>
+        <li>- Доставка куръером</li>
+        <li>- Доставка куръером</li>
+      </ul>
+
+      <button class="show show-delivery">Показать все <i class="fa-solid fa-angle-down"></i></button>
+    </div>
+
+    <div class="seller">
+      <div class="seller__header">
+        <h4 class="title">Продавец</h4>
+        <a href="#">Перейти на сайт</a>
+      </div>
+      <div class="seller__main">
+        <div class="seller__main__photo">
+          <img src="./assets/images/company.png" alt="company" />
+        </div>
+        <div class="seller__main__address">
+          <b>Amazon</b>
+          <p>г. Ташкент, Узбекистан</p>
+        </div>
+      </div>
+
+      <section class="seller__info">
+        <div>
+          <i class="bi bi-clock"></i>
+          <p>Сегодня работает до 18:00</p>
+          <a href="">Весь график</a>
+        </div>
+        <div>
+          <i class="bi bi-telephone"></i>
+          <p>+998 99 123 45 67</p>
+        </div>
+        <div>
+          <i class="bi bi-globe"></i>
+          <a href="">amazon.com</a>
+        </div>
+      </section>
+
+      <section class="seller__actions">
+        <button class="btn btn-danger">Все товары продавца</button>
+        <button class="btn btn-order">Заказать звонок</button>
+      </section>
+    </div>
+
+    <div class="recommend">
+      <div class="recommend__header">
+        <h4 class="title">Похожие товары продавца</h4>
+        <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card__header">
+            <i class="fa-regular fa-heart like-btn"></i>
+            <img src="./assets/images/img1.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal -->
-    <div
-      class="check-modal modal fade"
-      id="checkModal"
-      tabindex="-1"
-      aria-labelledby="checkModalLabel"
-      aria-hidden="true"
-    >
+    <div class="check-modal modal" id="checkModal" tabindex="-1" aria-labelledby="checkModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen" style="width: 90%; margin-left: auto">
         <div class="modal-content">
           <div class="modal-header">
