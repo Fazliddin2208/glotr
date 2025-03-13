@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: regular;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Gilroy"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  unicode-range: U+000-5FF;
+}/*# sourceMappingURL=fonts.css.map */
