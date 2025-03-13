@@ -18,6 +18,24 @@ body {
 
 body {
   background-color: #f5f6f8;
+  color: #344054;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-size: 18px;
+  color: #344054;
+  font-weight: 700;
+}
+
+.show {
+  color: #2d47a3;
+  background: transparent;
+  border: none;
+  margin-top: 15px;
 }
 
 .form-control:focus {
@@ -62,6 +80,8 @@ body {
   background-color: #fff;
 }
 .my-breadcrumb .breadcrumb {
+  flex-wrap: nowrap;
+  overflow: auto;
   display: flex;
   align-items: center;
   margin-bottom: 6px;
@@ -69,6 +89,7 @@ body {
 .my-breadcrumb .breadcrumb-item a {
   color: #667085;
   text-decoration: none;
+  font-size: 14px;
 }
 .my-breadcrumb .breadcrumb-item.active {
   color: #f24236;
@@ -84,6 +105,10 @@ body {
 .my-tabs {
   background-color: #fff;
   padding: 6px 16px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  font-size: 14px;
 }
 .my-tabs .nav-link {
   color: #2f2f2f;
@@ -91,4 +116,231 @@ body {
 .my-tabs .nav-link.active {
   color: #f24236;
   font-weight: 600;
+}
+
+.my-tabs::-webkit-scrollbar {
+  width: 0;
+}
+
+.my-carousel {
+  padding: 14px 12px;
+}
+.my-carousel .carousel {
+  background-color: #fff;
+  padding: 16px;
+  height: 320px;
+  border-radius: 8px;
+}
+.my-carousel .carousel .like-btn {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 22px;
+  color: red;
+}
+.my-carousel .carousel-indicators {
+  margin-bottom: 0;
+}
+.my-carousel .carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #e8eaec !important;
+}
+.my-carousel .carousel-indicators button.active {
+  background-color: #f24236 !important;
+}
+.my-carousel .carousel-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.my-carousel .carousel-item {
+  height: 100%;
+  height: 90% !important;
+}
+.my-carousel .carousel-item img {
+  height: 100% !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.info {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+.info h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.info__number {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.info__number .count {
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.info__number .count.no {
+  background: rgba(251, 151, 144, 0.1);
+  color: #f24236;
+}
+.info__number .count.yes {
+  background: rgba(0, 255, 0, 0.08);
+  color: #00ec04;
+}
+.info__number .code {
+  font-size: 13px;
+  color: #667085;
+}
+.info__price {
+  color: #f24236;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+.info__price span {
+  font-size: 14px;
+}
+.info__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.info__actions .check {
+  flex: 1;
+  font-weight: 600;
+  font-size: 14px;
+}
+.info__actions .review {
+  padding: 8px 16px;
+  background: rgba(251, 151, 144, 0.1);
+  color: #f24236;
+}
+
+.description {
+  margin: 12px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+.description p {
+  height: 155px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.check-modal .modal-header {
+  background-color: #f5f6f8;
+}
+.check-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+}
+.check-modal .modal-body .intro p {
+  color: #667085;
+  font-size: 12px;
+}
+.check-modal .modal-body .code-checker label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.check-modal .modal-body .code-checker p {
+  font-size: 12px;
+  color: #667085;
+}
+.check-modal .modal-body .code-checker p span {
+  color: #f24236;
+}
+.check-modal .modal-body .action {
+  padding: 0 12px;
+}
+
+.approve-modal .company {
+  background: #f5f6f8;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+}
+.approve-modal .company__photo {
+  width: 55px;
+  min-height: 55px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  display: flex;
+}
+.approve-modal .company__photo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  -o-object-position: center;
+     object-position: center;
+}
+.approve-modal .company__info b {
+  font-size: 14px;
+}
+.approve-modal .company__info p {
+  font-size: 12px;
+  width: 90%;
+  line-height: normal;
+}
+.approve-modal .order {
+  margin: 24px 0;
+  background: #f5f6f8;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+}
+.approve-modal .order i {
+  font-size: 40px;
+  color: #32ba7c;
+}
+.approve-modal .order h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+.approve-modal .order p {
+  margin: 0;
+  color: #667085;
+  font-size: 12px;
+  width: 80%;
+  text-align: center;
+}
+.approve-modal .list-group {
+  font-size: 12px;
+}
+.approve-modal .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  border-color: #e8eaed;
+}
+.approve-modal .list-group-item div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.approve-modal .list-group-item p,
+.approve-modal .list-group-item a {
+  max-width: 60%;
+  text-align: right;
+}
+.approve-modal .list-group-item a {
+  color: #f24236;
+}
+.approve-modal .action {
+  margin-top: 24px;
+  padding: 0 12px;
 }/*# sourceMappingURL=style.css.map */
