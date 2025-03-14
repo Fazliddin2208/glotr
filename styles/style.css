@@ -19,6 +19,7 @@ body {
 body {
   background-color: #f5f6f8;
   color: #344054;
+  padding-bottom: 50px;
 }
 
 p {
@@ -387,10 +388,113 @@ button.show {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .recommend__header a {
   color: #344054;
   font-size: 20px;
+}
+.recommend .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.recommend .cards .card {
+  position: relative;
+  padding-top: 14px;
+  border: none;
+  border-radius: 8px;
+}
+.recommend .cards .card .discount {
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  background-color: #129a1b;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 0 8px 8px 0px;
+  font-size: 12px;
+}
+.recommend .cards .card .like-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 22px;
+  color: red;
+}
+.recommend .cards .card .card-img-top {
+  width: 90%;
+  margin: 0 auto;
+}
+.recommend .cards .card-body {
+  padding: 12px;
+}
+.recommend .cards .card-body__title {
+  font-size: 13px;
+  color: #344054;
+}
+.recommend .cards .card-body__price {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #f24236;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.recommend .cards .card-body__price span {
+  font-size: 14px;
+}
+.recommend .cards .card-body__count {
+  font-size: 12px;
+}
+.recommend .cards .card-body__count.yes {
+  color: #129a1b;
+}
+.recommend .cards .card-body__count.no {
+  color: #f24236;
+}
+.recommend .cards .card-body__count.order {
+  color: #fac102;
+}
+.recommend .cards .card-footer {
+  background: #fff;
+  border-color: #f6f8f9;
+}
+.recommend .cards .card-footer h4 {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.recommend .cards .card-footer p {
+  font-size: 12px;
+  color: #667085;
+}
+
+.tags {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+.tags__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.tags__header a {
+  color: #344054;
+  font-size: 20px;
+}
+.tags__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tags__body button {
+  flex: 1 1;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 8px 12px;
 }
 
 .check-modal .modal-header {
